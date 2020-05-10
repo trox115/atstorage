@@ -2,15 +2,7 @@ import React from 'react';
 import { InputForm } from '../style';
 import PropTypes from 'prop-types';
 
-const TextInput = ({
-  name,
-  label,
-  onChange,
-  placeholder,
-  value,
-  error,
-  type,
-}) => {
+const TextInput = ({ name, label, onChange, placeholder, value, type }) => {
   return (
     <InputForm
       name={name}
@@ -19,7 +11,6 @@ const TextInput = ({
       value={value}
       type={type}
       onChange={onChange}
-      error={error}
     />
   );
 };
@@ -30,7 +21,6 @@ TextInput.propTypes = {
   onChange: PropTypes.func.isRequired,
   placeholder: PropTypes.string,
   value: PropTypes.string,
-  error: PropTypes.string,
   type: PropTypes.string.isRequired,
 };
 

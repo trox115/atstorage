@@ -20,7 +20,7 @@ function LoginPage() {
   }
 
   function handleSubmit(event) {
-    alert(input.email + ' ' + input.password);
+    event.preventDefault();
   }
   return (
     <Container fluid>

@@ -3,13 +3,7 @@ import PropTypes from 'prop-types';
 import { StyledForm } from '../style';
 import TextInput from './TextInput';
 
-const LoginForm = ({
-  onSave,
-  onChange,
-  saving = false,
-  input,
-  errors = {},
-}) => {
+const LoginForm = ({ onSave, onChange, saving = false, input }) => {
   return (
     <StyledForm onSubmit={onSave}>
       <TextInput
@@ -35,6 +29,12 @@ const LoginForm = ({
       </button>
     </StyledForm>
   );
+};
+LoginForm.propTypes = {
+  onSave: PropTypes.func.isRequired,
+  onChange: PropTypes.func.isRequired,
+  saving: PropTypes.bool.isRequired,
+  input: PropTypes.object.isRequired,
 };
 
 export default LoginForm;
