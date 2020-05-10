@@ -9,18 +9,16 @@ const TextInput = ({
   placeholder,
   value,
   type,
-}) => {
-  return (
-    <InputForm
-      name={name}
-      label={label}
-      placeholder={placeholder}
-      value={value}
-      type={type}
-      onChange={onChange}
-    />
-  );
-};
+}) => (
+  <InputForm
+    name={name}
+    label={label}
+    placeholder={placeholder}
+    value={value}
+    type={type}
+    onChange={onChange}
+  />
+);
 
 TextInput.propTypes = {
   name: PropTypes.string.isRequired,
