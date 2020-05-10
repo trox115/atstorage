@@ -30,11 +30,7 @@ const LoginForm = ({
 				type="password"
 			/>
 
-			<button
-				type="submit"
-				disabled={saving}
-				className="btn btn-outline-dark"
-			>
+			<button type="submit" disabled={saving} className="btn btn-outline-dark">
 				{saving ? 'A entrar...' : 'Login'}
 			</button>
 		</StyledForm>
