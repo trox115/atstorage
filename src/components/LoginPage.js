@@ -2,7 +2,11 @@ import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { LoginImage, LoginLogo, LoginContainer } from '../style';
+import {
+  LoginImage,
+  LoginLogo,
+  LoginContainer,
+} from '../style';
 import Logo from '../assets/images/logo.png';
 import LoginForm from '../containers/LoginForm';
 

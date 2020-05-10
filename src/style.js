@@ -31,7 +31,8 @@ export const InputForm = styled.input`
   box-shadow: none;
   float: none;
   background-color: rgba(0, 0, 0, 0);
-  background-position: center bottom, center calc(100% - 1px);
+  background-position: center bottom,
+    center calc(100% - 1px);
   background-repeat: no-repeat;
   background-size: 0 2px, 100% 1px;
   padding: 0;

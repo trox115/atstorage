@@ -3,7 +3,12 @@ import PropTypes from 'prop-types';
 import { StyledForm } from '../style';
 import TextInput from './TextInput';
 
-const LoginForm = ({ onSave, onChange, saving = false, input }) => {
+const LoginForm = ({
+  onSave,
+  onChange,
+  saving = false,
+  input,
+}) => {
   return (
     <StyledForm onSubmit={onSave}>
       <TextInput
@@ -24,7 +29,11 @@ const LoginForm = ({ onSave, onChange, saving = false, input }) => {
         type="password"
       />
 
-      <button type="submit" disabled={saving} className="btn btn-outline-dark">
+      <button
+        type="submit"
+        disabled={saving}
+        className="btn btn-outline-dark"
+      >
         {saving ? 'A entrar...' : 'Login'}
       </button>
     </StyledForm>
